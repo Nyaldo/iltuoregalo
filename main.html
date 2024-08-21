@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>INDOVINELLO</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ef9aa1; 
+            color: #333; 
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        h3 {
+            color: #d9534f; 
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        
+        form {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+        input[type="button"] {
+            background-color: #d9534f; 
+            color: white; 
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="button"]:hover {
+            background-color: #d84843; 
+        }
+    </style>
+    <script type="text/javascript">
+        function risposta() {
+            var risposta = "globo";
+            var risposta_indovinello = document.form.n1.value.trim(); 
+
+            if (risposta_indovinello.toLowerCase() === risposta.toLowerCase()) {
+                window.location.href = "https://www.viviennewestwood.com";
+            } else {
+                alert("Risposta errata, riprova");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <h3>
+            Sono sempre stata la vostra casa, piccola rispetto al tutto ma grande abbastanza per ospitarvi tutti. Nella tua mano mi puoi osservare, grazie a chi dall'alto mi ha potuto ammirare. Generosa da sempre ed amica di tutti, la mia forma dovrai osservare e da lì ispirazione potrai trovare. Una sola parola ti è concessa, pensaci bene forse troverai risposte nella magica scienza.
+        </h3>
+        <input type="text" name="n1" placeholder="Inserisci la tua risposta">
+        <br>
+        <input type="button" name="n2" value="Invia" onClick="risposta()">
+    </form>
+</body>
+</html>
